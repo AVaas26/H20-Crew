@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: flex ;
+    justify-content: space-around;
+}
+
+li a:hover {
+    background-color: #cccccc;
+  }
+
+#links{
+    font-size: 20px;
+}
+
+#water{
+    width: 100%;
+}
+#caption{
+    font-style: italic;
+    text-align: center;
+    padding: 35px;
+    font-size: 25px;
+    color: black;
+}
+
+#info1 p,#info2 p,
+#info3 p,#info4 p{
+    font-style: italic;
+    color: black;
+}
+
+h1{
+    color: white;
+    margin-top: 20px;
+    font-size: 2em;
+    margin: 0;
+    padding: 15px;
+
+}
+
+h2 {
+    color:black;
+    margin-top: 20px;
+}
+
+.h2{
+    padding: 10px;
+
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+#information1,
+#information2{
+    padding: 15px;
+    font-size: 16px;
+    margin: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.benefits{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.benefits:hover{
+    transform: translateY(-15px);
+}
+
+
+.imgbox {
+    overflow: hidden;
+}
+
+.imgbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.content h3 {
+    color: #666;
+    margin-top: 5px;
+}
+
+.content p {
+    color: #777;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 70px;
+    width: 125px;
+    text-align: center;
+    padding-left: 100%;
+  }
+  
+nav {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+nav li {
+    list-style-type: none;
+    height: 50px;
+  }
+  
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+  }
+  
+nav a:hover {
+    color: white;
+    background-color: rgb(33, 112, 204, 80%);
+  }
+  
+nav li:first-child {
+    margin-right: auto;
+  }
+  
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(0, 0, 0, 30%);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+.sidebar li {
+    width: 100%;
+  }
+.sidebar a {
+    width: 100%;
+  }
+  
+.menu-button {
+    display: none;
+  }
+  
+@media (max-width: 800px) {
+    .hideOnMobile {
+      display: none;
+    }
+.menu-button {
+      display: block;
+    }
+  }
+  
+@media (max-width: 400px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#2170CC;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.benefits {
+    width: 300px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.benefits h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefits p {
+    margin-bottom: 10px;
+}
+
+.benefits img {
+    width: 100px;
+    height: auto;
+}
+
+.work img{
+    float: right;
+    margin: 10px;
+}
+
+.work{
+    height: 200px;
+    margin: 5px;
+    padding: 20px;
+}
+
+.work h2{
+    margin: 10px
+}
+.work p{
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.about-us h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.footer {
+    background-color: white;
+    box-shadow: 3px -3px 5px rgb(0, 0, 0, 50%);
+    clear: both;
+    text-align: right;
+    padding-right: 80px;
+}
+  
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+

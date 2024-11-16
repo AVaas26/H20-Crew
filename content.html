@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Page</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="content-style.css">
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <nav>
+    <!-- Sidebar menu -->
+    <ul class="sidebar">
+      <!-- Trigger to hide sidebar -->
+      <li onclick="hideSidebar()">
+        <a href="#">
+          <!-- SVG icon for hiding sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- Menu items -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">User profile</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">About US</a></li>
+    </ul>
+
+    <!-- Main navigation -->
+    <ul>
+      <!-- Logo -->
+      <li><img src="img/logo.png" alt="logo" class="logo"></li>
+      <!-- Menu items hidden on mobile -->
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Gallery</a></li>
+      <li class="hideOnMobile"><a href="#">Shop</a></li>
+      <li class="hideOnMobile"><a href="profile.html">User profile</a></li>
+      <li class="hideOnMobile"><a href="#">Feedback</a></li>
+      <li class="hideOnMobile"><a href="#">Sitemap</a></li>
+      <li class="hideOnMobile"><a href="team.html">Team</a></li>
+      <li class="hideOnMobile"><a href="#">About US</a></li>
+      <!-- Button to show sidebar on mobile -->
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#">
+          <!-- SVG icon for showing sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav> 
+
+     <!-- Links Section -->
+    <ul id="links">
+      <!-- Anchor links to different sections -->
+        <li><a href="#section1">The Water Project</a></li>
+        <li><a href="#section2">2024 Board of Directors</a></li>
+        <li><a href="#section3">The impacts</a></li>
+        <li><a href="#section4">Access to Clean Water</a></li>
+        <li><a href="#section5">Where we work</a></li>
+    </ul>
+
+    <!-- Image with Text Section -->
+    <div class="imgtext">
+        <img src="img/water.jpg" alt="The water for people" id="water">
+        <p id="caption">
+            “Thousand have lived without love, not one without water”
+        </p>
+    </div>
+
+    <!-- Section 1: The Water Project -->
+    <h2 class="h2" id="section1">The Water Project</h2>
+    <p id="information1">The main intention of The water Project to people is to make sure that people get the pure and healthy drinking water 
+        specially in the areas with low supply or crisis. Water is crucial for human life and, yet, some communities 
+        all over the world don’t have sufficient access to this basic thing because of various reasons like poverty, environment damage, 
+        or loss of infrastructure. To meet this urgent demand, donors aim to mitigate the short-run suffering, protect from diseases 
+        that are easily transmitted through water and to help communities which need support, whether because of natural disasters, 
+        conflicts or due to chronic economic issues. As well as that, those initiatives commonly strive to develop durable options for 
+        water use and facilities, with a purpose of establishing permanent positive effects on the nice of life, health as well as well-being 
+        of these communities’ members.
+    </p>
+
+    <!-- Header for Section 2 -->
+    <header>
+        <h1 id="section2">Meet the Board of Directors and Advisors</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgbox">
+                <img src="img/Peter.jpeg" alt="Peter Chasse">
+            </div>
+
+            <div class="content">
+                <h2>Peter Chasse</h2>
+                <h3>President & Founder</h3>
+                <div id="info1">
+                    <p>Peter Chasse founded The Water Project in 2006 with a committed group of students in Saint John, NB, Canada where he was serving as 
+                        a Pastor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgbox">
+                <img src="img/Todd.jpeg" alt="Image of Todd Bourgeois">
+            </div>
+            <div class="content">
+                <h2>Todd Bourgeois</h2>
+                <h3>Chairperson</h3>
+                <div id="info2">
+                    <p>After spending 36 years in Coca–Cola system as a professional, in 2018, he parted from the organization. This knowledge relates to what 
+                        is called Board experience with small publically traded companies.
+                    </p>
+                    <p>Todd represents the country’s outdoor enthusiasts and is a socially responsible volunteer lending a helping hand to the vulnerable. 
+                        They have been the residents of town of Allen, Texas for about 8 years. Todd is a parent of three children and grandfather of two.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgbox">
+                <img src="img/Kati.jpeg" alt="Image of Kati Bucciero">
+            </div>
+
+            <div class="content">
+                <h2>Kati Bucciero</h2>
+                <h3>Fundraiser</h3>
+                <div id="info3">
+                    <p>Kati raises funds to support The Water Project's initiatives. These funds are used to build new wells, repair existing ones, 
+                        or construct other clean water access points like sand dams and rainwater catchment systems in Africa.
+                        While there isn't information available about specific projects Kati is directly involved with, 
+                        her fundraising efforts contribute to The Water Project's overall goal of providing clean water solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgbox">
+                <img src="img/Samuel.jpeg" alt="Image of Samuel Ngidiwe">
+            </div>
+
+            <div class="content">
+                <h2>Samuel Ngidiwe</h2>
+                <h3>TWP Program Officer</h3>
+                <div id="info4">
+                    <p> Samuel Ngidiwe holds the title of Program Officer at The Water Project. Program Officers typically manage and oversee various 
+                        program activities within an organization. In Samuel's case, these programs likely involve water project implementation,
+                        monitoring, or community engagement.
+                    </p>
+                    <p>I'd like to learn more about Samuel's specific projects or areas of focus, you can try contacting The Water Project directly. 
+                        They might have more information available on their staff and their projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: The real impact -->
+    <h2 class="h2" id="section3">The real impact</h2>
+    <p id="information2">To us, community outreach involves accountability and transparency to all people among our donors, our communities and our teams
+        And that is why we are crazy about carrying the great reports received from the field. It looks like being invited to join in 
+        our everyday jobs and merriment. With us you will not mobilize just a few resources but empower people who are here at out 
+        headquarters as well as our partners in the field. Each donation has its own original community.
+        Each present stands for an untold story, a person or a future.Every gift has impact.
+        We take the monitoring of all our projects, old and new, to make sure that they still function as they had intended, seriously, 
+        so that the impact is long term. And we fix everything that is broken. We think, even the water dropping today should be falling in 
+        the future as well. To test our projects and understand them deeper you can check out our Projects Directory.
+    </p>
+
+    <!-- Header for Section 4 -->
+    <header>
+        <h1 id="section4">Clean water changes everything</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="benefits">
+            <img src="img/Education.jpeg" alt="Education">
+            <h2>Education</h2>
+            <p>Clean water boosts education. It prevents them from being ill, therefore seldom missing classes. They keep being hydrated to 
+                concentrate more in their lesson. Time that would have been used obtaining water is now dedicated to studying.
+                When there is clean water for hand washing, disease transmission in schools is reduced. All in all, clean water helps to create 
+                a better and safe community that the students can prosper in.
+            </p>
+        </div>
+
+        <div class="benefits">
+            <img src="img/Health.jpeg" alt="Health">
+            <h2>Health</h2>
+            <p>Availability of safe water has confidence saving lives. Infected water is a tool for, disease transmission such as 
+                diarrhea, cholera, and dysentery. Besides many other illness which one can suffer in the case there is no clean drinking 
+                water available, the sole risk of drinking clean water is that eventually it would put an end to the risk of diseases and would 
+                lead to a high level of immunity. Tanzania stands to enjoy potable water that is a factor of healthy body functioning. 
+                This is important as it enhances wellness and health in individuals.
+            </p>
+        </div>
+
+        <div class="benefits">
+            <img src="img/Time.png" alt="Time">
+            <h2>Time</h2>
+            <p>Absolutely! Apart from the sole utility of temporary water supply, it lessen the time spent in gathering water from the areas 
+                that lack availability to clean supply of water. Even walking, once in a while, instead of driving helps in the economization 
+                of the time needed to withdraw and clean the water closer to home.
+                Waterborne diseases are the top reason for recurring sickness episodes, 
+                causing resigned people to skip work or school. Swallowing clean water on the part of most of the population doesn't 
+                just mean less diseases but also more hours for production.
+            </p>
+        </div>
+
+        <div class="benefits">
+            <img src="img/Poverty.png" alt="Poverty">
+            <h2>Poverty</h2>
+            <p>The access to safe water remained the weapon for poverty reduction. It provides diligent employees with a good health. 
+                So, they can stay with the company. Time saved as people march for clean water access is a time spent working in jobs or school.
+                 Providing pure irrigation and having safe and healthy crops will contribute either for individuals to eat or to sell and earn 
+                 cash from crop production. After all, if the water is clean then there is less sickness and more being done. 
+                 This makes the lives of the people better and allows them to get above the vicious circle of poverty.
+            </p>
+        </div>
+    </main>
+
+    <!-- Header for Section 5 -->
+    <header>
+        <h1 id="section5">What they Did</h1>
+    </header>
+    <div class="about-us">
+        <h2>The Water Project is focused in four geographic regions across Kenya, Uganda, and Sierra Leone</h2>
+    </div>
+    <div class="work">
+        <h2>Western Kenya </h2>
+        <hr>
+        <img src="img/Western-Kenya.jpeg" alt="western-kenya">
+        <p>Through The Water Project’s Wash program, abundant water percolating from the two seasonal rains that flow through a 
+            myriad of springs with high water tables and deep aquifers in the Western Kenya area will be accessed, protected, filtered, 
+            and disinfected to meet the needs of residents. Evaluate water programs in villages, schools, and places of worship in Western Kenya 
+            such protected springs, rain water catchment systems, and water wells. 
+            The concept of the program lies in the principle of equal geographic propagation of the activities, 
+            qualitative training in hygiene and sanitation, and the contacts among health workers, local officials and educators.
+        </p>
+    </div>
+
+    <div class="work">
+        <h2>Southeastern Kenya </h2>
+        <hr>
+        <img src="img/South-kenya.jpeg" alt="Southeast-Kenya">
+        <p>The Water Project’s WaSH initiative in Southeast Kenya is about ending the challenge of water scarcity by building sand dams,
+             shallow hand dug wells, and 104,000 liter rainwater catchments system in a semi-arid environment. 
+             Investigate activities undertaken in this region to ascertain how you can avail yourself of (being an active team member in) 
+             such approaches as farming innovation, education, hygiene and sanitation training, and reliable water supply.
+        </p>
+    </div>
+
+    <div class="work">
+        <h2>Uganda </h2>
+        <hr>
+        <img src="img/Uganda.jpeg" alt="Uganda">
+        <p>The Wash program by Water Project in West of Uganda is designed to be a progress to the people in giving them the 
+            sense of ownership of the clean water access points put in place and the hygiene & sanitation behavior change. 
+            Consider water projects like secure the springs with protective methods and water wells to provide village wide water access 
+            totally coverage and a household level analysis of sanitation and hygiene practices. This community level intervention takes 
+            by a one of kind method that links the Water Carer Committees (these tasked with the responsibility of caring for the water points)
+             with a Village Savings and Loans Association.
+        </p>
+    </div>
+
+    <div class="work">
+        <h2>Sierra Leone </h2>
+        <hr>
+        <img src="img/Sierra-Leone.jpeg" alt="Sierra-Leone">
+        <p>The Water Project’s Wash program in Port Loko district, Sierra Leone is made up of a wide web that directly 
+            serves both new and rehabilitated water wells. Immerse yourself into these projects that are resilient as they have top
+            level implementations, tailor made hygiene and sanitation training, and credible monitoring, evaluation, and solutions 
+            relationships.
+        </p>
+    </div>
+
+     <!-- Footer Section -->
+    <div class="footer">
+        <br>
+        <a href="pgeditor.html">Page Editor</a>
+        <!-- Link to Page Editor -->
+        <br>
+        <br>
+    </div>
+</body>
+</html>

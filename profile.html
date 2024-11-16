@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Linking the external CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="profile-style.css">
+  <!-- Linking the external JavaScript file with 'defer' attribute for deferred execution -->
+  <script src="script.js" defer></script>
+  <title>User Profile</title>
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <nav>
+    <!-- Sidebar menu -->
+    <ul class="sidebar">
+      <!-- Trigger to hide sidebar -->
+      <li onclick="hideSidebar()">
+        <a href="#">
+          <!-- SVG icon for hiding sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- Menu items -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">User profile</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">About US</a></li>
+    </ul>
+
+    <!-- Main navigation -->
+    <ul>
+      <!-- Logo -->
+      <li><img src="img/logo.png" alt="logo" class="logo"></li>
+      <!-- Menu items hidden on mobile -->
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Gallery</a></li>
+      <li class="hideOnMobile"><a href="#">Shop</a></li>
+      <li class="hideOnMobile"><a href="profile.html">User profile</a></li>
+      <li class="hideOnMobile"><a href="#">Feedback</a></li>
+      <li class="hideOnMobile"><a href="#">Sitemap</a></li>
+      <li class="hideOnMobile"><a href="team.html">Team</a></li>
+      <li class="hideOnMobile"><a href="#">About US</a></li>
+      <!-- Button to show sidebar on mobile -->
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#">
+          <!-- SVG icon for showing sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav> 
+
+  <!-- Header section -->
+  <header>
+    <h1>Build Your Profile</h1>
+  </header>
+
+  <!-- Question section -->
+  <div id="que" class="question"></div>
+
+  <!-- Buttons for navigation -->
+  <button id="next" class="button">Start</button>
+  <button id="skip" class="button">Skip</button>
+
+  <!-- Content area -->
+  <div id="content" class="content"></div>
+
+  <!-- Progress bar -->
+  <progress id="progress" class="progress" value="0" max="12"></progress>
+
+  <!-- Footer section -->
+  <div class="footer">
+    <br>
+    <!-- Link to Page Editor -->
+    <a href="pgeditor.html">Page Editor</a>
+    <br>
+    <br>
+  </div>
+</body>
+</html>

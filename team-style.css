@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 20px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  background: white;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: rgb(33, 112, 204, 50%);
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card:hover {
+  height: 400px;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-70px);
+  z-index: 99;
+}
+
+.card img {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  color: white;
+  padding: 3px;
+}
+
+.content p{
+  margin: 10px;
+
+}
+
+
+body {
+  font-family: arial;
+}
+
+.logo {
+  height: 70px;
+  width: 125px;
+  text-align: center;
+  padding-left: 100%;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(33, 112, 204, 80%);
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgb(0, 0, 0, 30%);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.footer {
+  background-color: white;
+  box-shadow: 3px -3px 5px rgb(0, 0, 0, 50%);
+  clear: both;
+  text-align: right;
+  padding-right: 80px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}

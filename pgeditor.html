@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page Editor</title>
+  <!-- Linking external stylesheet -->
+  <link rel="stylesheet" href="pgeditor-style.css">
+</head>
+<body>
+   <!-- Navigation Bar -->
+  <nav>
+    <!-- Sidebar menu -->
+    <ul class="sidebar">
+      <!-- Trigger to hide sidebar -->
+      <li onclick="hideSidebar()">
+        <a href="#">
+          <!-- SVG icon for hiding sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- Menu items -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">User profile</a></li>
+      <li><a href="#">Feedback</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">About US</a></li>
+    </ul>
+
+    <!-- Main navigation -->
+    <ul>
+      <!-- Logo -->
+      <li><img src="img/logo.png" alt="logo" class="logo"></li>
+      <!-- Menu items hidden on mobile -->
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Gallery</a></li>
+      <li class="hideOnMobile"><a href="#">Shop</a></li>
+      <li class="hideOnMobile"><a href="profile.html">User profile</a></li>
+      <li class="hideOnMobile"><a href="#">Feedback</a></li>
+      <li class="hideOnMobile"><a href="#">Sitemap</a></li>
+      <li class="hideOnMobile"><a href="team.html">Team</a></li>
+      <li class="hideOnMobile"><a href="#">About US</a></li>
+      <!-- Button to show sidebar on mobile -->
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#">
+          <!-- SVG icon for showing sidebar -->
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav> 
+  
+  <!-- Header section -->
+  <header> 
+    <h1>Page Editor</h1>
+  </header>
+
+   <!-- Information section -->
+  <div class="info"> 
+    <p>Name: Adeesha Vaas</p>
+    <p>Role: Student No 3</p>
+    <p>The following pages were edited by me!</p>
+  </div>
+
+  <div>
+    <ul class="pages">
+      <!-- Page 1: User Profile -->
+      <li>
+        <h3>User Profile</h3> 
+        <p>As a user provides info, the system regularly changes and displays user profile. When users provide every piece of information, the system immediately reacts and the next step is updated depending on the previous answers.
+        The system also gives feedback on how the profile is being filled in proportionally for the least level of the completion for the first set of prompts to 100% completion for having completed all the steps.
+        </p>
+        <a href="profile.html">Link to the user profile page</a>
+      </li>
+       <!-- Page 2: Team Page -->
+      <li>
+        <h3>Team Page</h3>
+        <p>Created the team page using HTML and CSS. All the members in our group display on this page, along with their student roles and works. Created a details page with HTML, CSS, and JavaScript. Added hover effects and altered visibility. Shows the role of each student and their names.</p>
+        <a href="team.html">Link to the Team page</a>
+      </li>
+       <!-- Page 3: Content Page -->
+      <li>
+        <h3>Content Page</h3>
+        <p>On the Content page, I discussed about The Water Project Organization. First, there is a brief introduction about the organization. Then, there is a list of the Board of Directors and Advisors. Afterward, we can see the impacts. Created this page containing links and images of websites.</p>
+        <a href="content.html">Link to the Content page</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
